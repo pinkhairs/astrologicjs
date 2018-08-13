@@ -7,8 +7,6 @@ import { Chart, ChartType, ChartData } from "./chart";
 export class ChartFactory {
 
     static async create(name: string, p1: Person, p2: Person = null, type: ChartType = ChartType.Basic) {
-        console.log('HENLO')
-        alert('HENLO')
         // make sure a name was passed in
         if (null === name || "undefined" === typeof name || 0 === name.length) {
             throw Error("Chart must have a name (ChartFactory)");
