@@ -46,18 +46,18 @@ export class Chart {
     _debug: boolean = false;
 
     _signs = [
-        {name: "aries",       symbol: "q", v: 1},
-        {name: "taurus",      symbol: "w", v: 1},
-        {name: "gemini",      symbol: "e", v: 1},
-        {name: "cancer",      symbol: "r", v: 1},
-        {name: "leo",         symbol: "t", v: 1},
-        {name: "virgo",       symbol: "z", v: 1},
-        {name: "libra",       symbol: "u", v: 1},
-        {name: "scorpio",     symbol: "i", v: 1},
-        {name: "sagittarius", symbol: "o", v: 1},
-        {name: "capricorn",   symbol: "p", v: 1},
-        {name: "aquarius",    symbol: "ü", v: 1},
-        {name: "pisces",      symbol: "+", v: 1}
+        {name: "aries",       symbol: "aries", v: 1},
+        {name: "taurus",      symbol: "taurus", v: 1},
+        {name: "gemini",      symbol: "gemini", v: 1},
+        {name: "cancer",      symbol: "cancer", v: 1},
+        {name: "leo",         symbol: "leo", v: 1},
+        {name: "virgo",       symbol: "virgo", v: 1},
+        {name: "libra",       symbol: "libra", v: 1},
+        {name: "scorpio",     symbol: "scorpio", v: 1},
+        {name: "sagittarius", symbol: "sagittarius", v: 1},
+        {name: "capricorn",   symbol: "capricorn", v: 1},
+        {name: "aquarius",    symbol: "aquarius", v: 1},
+        {name: "pisces",      symbol: "pisces", v: 1}
     ];
 
     constructor(public name: string, public p1: Person, cdata: ChartDataArray, public p2?: Person, public type: ChartType = ChartType.Basic) {
@@ -192,7 +192,7 @@ export class Chart {
      */
     static async getChartData(date: string, p: Point): Promise<ChartData> {
         return await rp({
-            uri: "http://www.morphemeris.com/ephemeris.php",
+            uri: "http:/localhost/mophemeris/ephemeris.php",
             qs: {
                 date: date,
                 lat: p.lat,

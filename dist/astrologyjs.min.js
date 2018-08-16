@@ -2815,7 +2815,7 @@ var chart = createCommonjsModule(function (module, exports) {
                                 case 0:
                                     _context2.next = 2;
                                     return rp_1.default({
-                                        uri: "http://localhost/morphemeris/ephemeris.php",
+                                        uri: "https://astrologi.cc/morphemeris/ephemeris.php",
                                         qs: {
                                             date: date,
                                             lat: p.lat,
